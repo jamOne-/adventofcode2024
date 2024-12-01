@@ -6,23 +6,22 @@ fun main() {
 }
 
 fun solve01a(lines: List<String>): Int {
-    val (xs, ys) = lines.map(::lineToPair)
-        .fold(Pair(listOf(), listOf()), ::flattenPairs)
+    val (xs, ys) = lines.map(::lineToPair).flattenPairs()
 
     return xs.sorted().zip(ys.sorted()).map(::distance).sum()
 }
 
 fun solve01b(lines: List<String>): Int {
-    val (xs, ys) = lines.map(::lineToPair)
-        .fold(Pair(listOf(), listOf()), ::flattenPairs)
+    val (xs, ys) = lines.map(::lineToPair).flattenPairs()
     val rightCount = ys.groupingBy { it }.eachCount()
 
     return xs.fold(0) { similarity, x -> similarity + x * rightCount.getOrDefault(x, 0) }
 }
 
 private fun distance(pair: Pair<Int, Int>): Int = abs(pair.first - pair.second)
-private fun flattenPairs(lists: Pair<List<Int>, List<Int>>, pair: Pair<Int, Int>): Pair<List<Int>, List<Int>> =
-    Pair(lists.first + pair.first, lists.second + pair.second)
+
+private fun <T, R> List<Pair<T, R>>.flattenPairs(): Pair<List<T>, List<R>> =
+    this.fold(Pair(listOf(), listOf())) { result, pair -> Pair(result.first + pair.first, result.second + pair.second) }
 
 private fun lineToPair(line: String): Pair<Int, Int> {
     val split = line.split("   ")
