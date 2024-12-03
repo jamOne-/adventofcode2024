@@ -3,17 +3,35 @@ fun main() {
     println(solve03b(readInputLines("03")))
 }
 
-fun solve03a(lines: List<String>): Int = parseLine(lines.joinToString()).sumOf { it.x * it.y }
+fun solve03a(lines: List<String>): Int =
+    lines.flatMap(::tokenizeLine).filterIsInstance<Multiply>().sumOf { it.x * it.y }
 
-fun solve03b(lines: List<String>): Int = parseLine(prepareLine(lines.joinToString())).sumOf { it.x * it.y }
+fun solve03b(lines: List<String>): Int =
+    lines.flatMap(::tokenizeLine).fold(State(true, 0)) { state, token ->
+        when (token) {
+            is Do -> State(true, state.total)
+            is Dont -> State(false, state.total)
+            is Multiply -> if (state.enabled) {
+                State(state.enabled, state.total + token.x * token.y)
+            } else {
+                state
+            }
+        }
+    }.total
 
-private data class Multiply(val x: Int, val y: Int)
+private data class State(val enabled: Boolean, val total: Int)
 
-private val MULTIPLY_REGEX = Regex("""mul\((\d+),(\d+)\)""")
-private fun parseLine(line: String): List<Multiply> =
-    MULTIPLY_REGEX.findAll(line).map { Multiply(it.groupValues[1].toInt(), it.groupValues[2].toInt()) }.toList()
+private sealed interface Token
+private data class Multiply(val x: Int, val y: Int) : Token
+private object Do : Token
+private object Dont : Token
 
-private val DONT_DO_REPLACE_REGEX = Regex("""don't\(\).*?do\(\)""")
-private val DONT_ANYTHING_REPLACE_REGEX = Regex("""don't\(\).*""")
-private fun prepareLine(line: String): String =
-    line.replace(DONT_DO_REPLACE_REGEX, "").replace(DONT_ANYTHING_REPLACE_REGEX, "")
+private val ALL_TOKENS_REGEX = Regex("""mul\((\d+),(\d+)\)|do\(\)|don't\(\)""")
+private fun tokenizeLine(line: String): List<Token> =
+    ALL_TOKENS_REGEX.findAll(line).map {
+        when (it.value) {
+            "do()" -> Do
+            "don't()" -> Dont
+            else -> Multiply(it.groupValues[1].toInt(), it.groupValues[2].toInt())
+        }
+    }.toList()

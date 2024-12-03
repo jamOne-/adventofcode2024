@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="02: Optimized">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/03.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/03.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/03_example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/03_example2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test03.kt" afterDir="false" />
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/03.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Test03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Test03.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin._03Kt">
+  <component name="RunManager" selected="JUnit.Test03">
     <configuration name="Test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,9 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_02Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_02Kt" />
+    <configuration name="Test03.test_b_againstReplaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test03" />
+      <option name="METHOD_NAME" value="test_b_againstReplaces" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin._03Kt" />
         <item itemvalue="JUnit.Test03" />
+        <item itemvalue="Kotlin._03Kt" />
+        <item itemvalue="JUnit.Test03.test_b_againstReplaces" />
         <item itemvalue="JUnit.Test03.test_b" />
         <item itemvalue="JUnit.Test02" />
-        <item itemvalue="Kotlin._02Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733167730461</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="03">
+      <created>1733211906058</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733211906058</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +182,7 @@
     <MESSAGE value="01: flattenPairs extension function" />
     <MESSAGE value="02" />
     <MESSAGE value="02: Optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="02: Optimized" />
+    <MESSAGE value="03" />
+    <option name="LAST_COMMIT_MESSAGE" value="03" />
   </component>
 </project>
