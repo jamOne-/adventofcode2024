@@ -15,4 +15,11 @@ class Test05 {
 
         assertEquals(123, result)
     }
+
+    @Test
+    fun test_b_real() {
+        val result = solve05b(readInputLines("05"))
+
+        assertEquals(4507, result)
+    }
 }

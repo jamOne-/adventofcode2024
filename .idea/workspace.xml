@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="04">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/05.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/05.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/05_example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test05.kt" afterDir="false" />
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/05.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Test05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Test05.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733298630146</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="05">
+      <created>1733385146515</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733385146515</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +203,7 @@
     <MESSAGE value="03" />
     <MESSAGE value="03: Correct the solution" />
     <MESSAGE value="04" />
-    <option name="LAST_COMMIT_MESSAGE" value="04" />
+    <MESSAGE value="05" />
+    <option name="LAST_COMMIT_MESSAGE" value="05" />
   </component>
 </project>
