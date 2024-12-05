@@ -11,8 +11,7 @@ fun solve05a(lines: List<String>): Int {
 fun solve05b(lines: List<String>): Int {
     val (ordering, updates) = parseInput(lines)
     val incorrectUpdates = updates.filter { !isUpdateCorrect(ordering, it) }
-    return incorrectUpdates.map { it.sortedWith { a, b -> if (Pair(b, a) in ordering) 1 else -1 } }
-        .sumOf { it[it.size / 2] }
+    return incorrectUpdates.map { fixUpdate(ordering, it) }.sumOf { it[it.size / 2] }
 }
 
 private fun isUpdateCorrect(ordering: Set<Pair<Int, Int>>, update: List<Int>): Boolean {
@@ -25,6 +24,22 @@ private fun isUpdateCorrect(ordering: Set<Pair<Int, Int>>, update: List<Int>): B
     }
 
     return true
+}
+
+private fun fixUpdate(ordering: Set<Pair<Int, Int>>, update: List<Int>): List<Int> {
+    val fixed: MutableList<Int> = update.toMutableList()
+
+    for (i in 1..fixed.size) {
+        for (j in 0 until fixed.size - i) {
+            if (Pair(fixed[j + 1], fixed[j]) in ordering) {
+                val tmp = fixed[j]
+                fixed[j] = fixed[j + 1]
+                fixed[j + 1] = tmp
+            }
+        }
+    }
+
+    return fixed
 }
 
 private val ORDER_REGEX = Regex("""(\d+)\|(\d+)""")
