@@ -10,7 +10,8 @@ fun solve06a(lines: List<String>): Int {
 
 fun solve06b(lines: List<String>): Int {
     val (maze, start) = parseInput(lines)
-    return locationsForObstacle(maze).filter { walkingInCircle(addObstacle(maze, it), start) }.size
+    val locationsForObstacle = walk(maze, start).minus(start)
+    return locationsForObstacle.filter { walkingInCircle(addObstacle(maze, it), start) }.size
 }
 
 private typealias Maze = Map<Point, Char>
@@ -30,9 +31,6 @@ private fun parseInput(lines: List<String>): Pair<Maze, Point> {
 
     return Pair(map, checkNotNull(start))
 }
-
-private fun locationsForObstacle(map: Maze): Set<Point> =
-    map.entries.filter { (_, c) -> c == '.' }.map { (p, _) -> p }.toSet()
 
 private fun addObstacle(map: Maze, position: Point): Maze {
     val newMap = map.toMutableMap()
