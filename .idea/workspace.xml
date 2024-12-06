@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="05">
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="06">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/06.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/06.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/06_example1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test06.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/05.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Test05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Test05.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Common.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Common.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -55,38 +58,32 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin._05Kt">
-    <configuration name="Test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin._06Kt">
+    <configuration name="Test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test04" />
+      <option name="MAIN_CLASS_NAME" value="Test06" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test06.test_a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test05" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test05.test_b" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventofcode2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test05" />
-      <option name="METHOD_NAME" value="test_b" />
+      <option name="MAIN_CLASS_NAME" value="Test06" />
+      <option name="METHOD_NAME" value="test_a" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_04Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_04Kt" />
+    <configuration name="Test06.test_b" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test06" />
+      <option name="METHOD_NAME" value="test_b" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,13 +95,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_06Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06Kt" />
+      <module name="adventofcode2024" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._06Kt" />
+        <item itemvalue="JUnit.Test06" />
+        <item itemvalue="JUnit.Test06.test_b" />
+        <item itemvalue="JUnit.Test06.test_a" />
         <item itemvalue="Kotlin._05Kt" />
-        <item itemvalue="JUnit.Test05" />
-        <item itemvalue="JUnit.Test05.test_b" />
-        <item itemvalue="Kotlin._04Kt" />
-        <item itemvalue="JUnit.Test04" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +208,8 @@
     <MESSAGE value="03: Correct the solution" />
     <MESSAGE value="04" />
     <MESSAGE value="05" />
-    <option name="LAST_COMMIT_MESSAGE" value="05" />
+    <MESSAGE value="Reapply &quot;05: Use Kotlin `sortedWith` instead of bubble-sort&quot;&#10;&#10;This reverts commit 70fb405e3590ad40edda0df2af29d085bcde3835.&#10;&#10;Turns out the input ordering rules are complete and don't require transitive inference!" />
+    <MESSAGE value="06" />
+    <option name="LAST_COMMIT_MESSAGE" value="06" />
   </component>
 </project>
