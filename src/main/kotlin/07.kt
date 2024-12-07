@@ -33,9 +33,9 @@ private fun isCorrect(line: Line, part2: Boolean = false): Boolean {
         } else {
             val split = split(total, line.xs[i])
             val canSubtract = total >= line.xs[i]
-            val canDivide = total % line.xs[i]
+            val canDivide = total % line.xs[i] == BigInteger.valueOf(0)
             val canSplit = part2 && split != null
-            canSubtract && tmp(total - line.xs[i], i - 1) || canDivide == BigInteger.valueOf(0) && tmp(
+            canSubtract && tmp(total - line.xs[i], i - 1) || canDivide && tmp(
                 total / line.xs[i], i - 1
             ) || canSplit && tmp(split!!, i - 1)
         }
