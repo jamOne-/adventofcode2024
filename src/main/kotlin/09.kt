@@ -9,7 +9,7 @@ fun solve09a(lines: List<String>): BigInteger = checksum(fragmentBlocks(readInpu
 
 fun solve09b(lines: List<String>): BigInteger = checksum(fragmentBlocks2(readInput(lines[0])))
 
-private data class Block(val id: Int, val size: Int, val freeAfter: Int, val moved: Boolean = false)
+private data class Block(val id: Int, val size: Int, val freeAfter: Int)
 
 private fun readInput(disk: String): List<Block> {
     val fixedDisk = if (disk.length % 2 != 0) disk + '0' else disk
@@ -28,7 +28,7 @@ private fun readInput(disk: String): List<Block> {
 
 private fun fragmentBlocks(blocks: List<Block>): List<Block> {
     val bs = blocks.toMutableList()
-    val result = mutableListOf(Block(blocks[0].id, blocks[0].size, 0))
+    val result = mutableListOf(blocks[0].copy(freeAfter = 0))
 
     var i = 0
     var j = bs.lastIndex
@@ -60,31 +60,25 @@ private fun fragmentBlocks(blocks: List<Block>): List<Block> {
 private fun fragmentBlocks2(blocks: List<Block>): List<Block> {
     val result = blocks.toMutableList()
 
-    var i = blocks.lastIndex
-    while (i > 0) {
-        val ib = result[i]
-        if (ib.moved) {
-            i -= 1
-            continue
-        }
-
+    var r = blocks.lastIndex
+    while (r > 0) {
+        val rb = result[r]
         var moved = false
-        for (j in 0 until i) {
-            val jb = result[j]
-            if (jb.freeAfter >= ib.size) {
-                result[i - 1] = result[i - 1].copy(freeAfter = result[i - 1].freeAfter + ib.freeAfter + ib.size)
-                result.removeAt(i)
-                result[j] = jb.copy(freeAfter = 0)
-                result.add(j + 1, ib.copy(freeAfter = jb.freeAfter - ib.size, moved = true))
+        for (l in 0 until r) {
+            if (result[l].freeAfter >= rb.size) {
+                result[r - 1] = result[r - 1].copy(freeAfter = result[r - 1].freeAfter + rb.size + rb.freeAfter)
+                result.removeAt(r)
+                val lb = result[l]
+                result[l] = lb.copy(freeAfter = 0)
+                result.add(l + 1, rb.copy(freeAfter = lb.freeAfter - rb.size))
                 moved = true
                 break
             }
         }
         if (!moved) {
-            i -= 1
+            r -= 1
         }
     }
-
 
     return result
 }

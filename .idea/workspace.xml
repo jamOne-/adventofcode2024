@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="10">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/10.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/10_example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test10.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/06.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/06.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Common.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Common.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/09.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/09.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin._10Kt">
+  <component name="RunManager" selected="Kotlin._09Kt">
     <configuration name="Test09" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,10 +99,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._09Kt" />
+        <item itemvalue="JUnit.Test09" />
         <item itemvalue="Kotlin._10Kt" />
         <item itemvalue="JUnit.Test10" />
-        <item itemvalue="JUnit.Test09" />
-        <item itemvalue="Kotlin._09Kt" />
         <item itemvalue="JUnit.Test09.test_b2" />
       </list>
     </recent_temporary>
@@ -226,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733813103448</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="10">
+      <created>1733815003353</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733815003353</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
