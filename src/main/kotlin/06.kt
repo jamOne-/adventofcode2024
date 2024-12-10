@@ -80,16 +80,6 @@ private fun walkingInCircle(map: Maze, start: Point): Boolean {
 
 private fun walkEnded(map: Maze, position: Point): Boolean = !map.containsKey(position)
 
-private fun move(direction: Direction, position: Point): Point =
-    Point(position.x + direction.delta.x, position.y + direction.delta.y)
-
-private enum class Direction(val delta: Vector) {
-    UP(Vector(0, -1)),
-    DOWN(Vector(0, 1)),
-    RIGHT(Vector(1, 0)),
-    LEFT(Vector(-1, 0))
-}
-
 private fun rotateRight(direction: Direction): Direction =
     when (direction) {
         Direction.UP -> Direction.RIGHT
