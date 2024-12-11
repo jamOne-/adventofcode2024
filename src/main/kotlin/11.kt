@@ -22,19 +22,17 @@ private fun countStones(id: Long, blinks: Int): Long {
         return mem[p]!!
     }
 
-    val result = if (blinks == 0) {
-        1
-    } else if (id == 0L) {
-        countStones(1, blinks - 1)
-    } else if (id.toString().length % 2 == 0) {
-        val idString = id.toString()
-        countStones(idString.substring(0, idString.length / 2).toLong(), blinks - 1) + countStones(
-            idString.substring(
-                idString.length / 2
-            ).toLong(), blinks - 1
-        )
-    } else {
-        countStones(id * 2024, blinks - 1)
+    val result = when {
+        blinks == 0 -> 1
+        id == 0L -> countStones(1, blinks - 1)
+        id.toString().length % 2 == 0 -> {
+            val idString = id.toString()
+            val id1 = idString.substring(0, idString.length / 2).toLong()
+            val id2 = idString.substring(idString.length / 2).toLong()
+            countStones(id1, blinks - 1) + countStones(id2, blinks - 1)
+        }
+
+        else -> countStones(id * 2024, blinks - 1)
     }
 
     mem[p] = result
