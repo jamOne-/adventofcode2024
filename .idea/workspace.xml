@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="12">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/12.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/12_example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/12_example2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/12_example3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/12_example4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/12_example5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test12.kt" afterDir="false" />
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="13">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/13.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/14.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/13_example1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/14_example1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test13.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test14.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/07.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/07.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,62 +48,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.Test12.test_b5">
-    <configuration name="Test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.Test13">
+    <configuration name="Test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test12" />
+      <option name="MAIN_CLASS_NAME" value="Test13" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test12.test_b" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test12" />
-      <option name="METHOD_NAME" value="test_b" />
+      <option name="MAIN_CLASS_NAME" value="Test14" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test14.test_a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventofcode2024" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test14" />
+      <option name="METHOD_NAME" value="test_a" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test12.test_b2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="_13Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_13Kt" />
       <module name="adventofcode2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test12" />
-      <option name="METHOD_NAME" value="test_b2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test12.test_b5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventofcode2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test12" />
-      <option name="METHOD_NAME" value="test_b5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_12Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12Kt" />
+    <configuration name="_14Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_14Kt" />
       <module name="adventofcode2024" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test12.test_b5" />
-        <item itemvalue="Kotlin._12Kt" />
-        <item itemvalue="JUnit.Test12" />
-        <item itemvalue="JUnit.Test12.test_b2" />
-        <item itemvalue="JUnit.Test12.test_b" />
+        <item itemvalue="JUnit.Test13" />
+        <item itemvalue="Kotlin._13Kt" />
+        <item itemvalue="Kotlin._14Kt" />
+        <item itemvalue="JUnit.Test14" />
+        <item itemvalue="JUnit.Test14.test_a" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1733904114330</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="12">
+      <created>1734026845971</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1734026845971</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Common: for 13 &amp; 14">
+      <created>1734270649486</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1734270649486</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +299,8 @@
     <MESSAGE value="11" />
     <MESSAGE value="11: small refactor" />
     <MESSAGE value="12" />
-    <option name="LAST_COMMIT_MESSAGE" value="12" />
+    <MESSAGE value="Common: for 13 &amp; 14" />
+    <MESSAGE value="13" />
+    <option name="LAST_COMMIT_MESSAGE" value="13" />
   </component>
 </project>
