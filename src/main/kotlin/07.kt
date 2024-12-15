@@ -10,7 +10,7 @@ fun solve07a(lines: List<String>): BigInteger = parseInput(lines).filter(::isCor
 fun solve07b(lines: List<String>): BigInteger =
     parseInput(lines).filter { isCorrect(it, part2 = true) }.sumOf { it.total }
 
-val LINE_REGEX = Regex("""^(\d+): (.+)$""")
+private val LINE_REGEX = Regex("""^(\d+): (.+)$""")
 
 private data class Line(val total: BigInteger, val xs: List<BigInteger>)
 
