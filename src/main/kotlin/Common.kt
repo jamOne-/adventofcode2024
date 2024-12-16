@@ -37,7 +37,10 @@ fun Vector.toPoint(): Point = Point(this.x, this.y)
 fun VectorL.toPointL(): PointL = PointL(this.x, this.y)
 
 fun move(direction: Direction, position: Point): Point =
-    Point(position.x + direction.delta.x, position.y + direction.delta.y)
+    position + direction.delta
+
+fun moveBackwards(direction: Direction, position: Point): Point =
+    position + direction.delta * -1
 
 enum class Direction(val delta: Vector) {
     UP(Vector(0, -1)),
@@ -45,3 +48,19 @@ enum class Direction(val delta: Vector) {
     RIGHT(Vector(1, 0)),
     LEFT(Vector(-1, 0))
 }
+
+fun rotateClockwise(d: Direction): Direction =
+    when (d) {
+        Direction.UP -> Direction.RIGHT
+        Direction.RIGHT -> Direction.DOWN
+        Direction.DOWN -> Direction.LEFT
+        Direction.LEFT -> Direction.UP
+    }
+
+fun rotateCounterclockwise(d: Direction): Direction =
+    when (d) {
+        Direction.UP -> Direction.LEFT
+        Direction.LEFT -> Direction.DOWN
+        Direction.DOWN -> Direction.RIGHT
+        Direction.RIGHT -> Direction.UP
+    }
