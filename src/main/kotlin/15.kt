@@ -24,8 +24,8 @@ private object Wall : Field
 private object Empty : Field
 private object Fish : Field
 private object Box : Field
-private data class BoxLeft(val right: Point) : Field
-private data class BoxRight(val left: Point) : Field
+private object BoxLeft : Field
+private object BoxRight : Field
 
 private data class Input15(val map: Map<Point, Field>, val fish: Point, val moves: List<Direction>)
 
@@ -52,7 +52,7 @@ private fun parseInput(lines: List<String>, part2: Boolean = false): Input15 {
             if (part2) {
                 val (l, r) = when (field) {
                     Fish -> Pair(Fish, Empty)
-                    Box -> Pair(BoxLeft(p + Vector(1, 0)), BoxRight(p))
+                    Box -> Pair(BoxLeft, BoxRight)
                     else -> Pair(field, field)
                 }
 
@@ -85,15 +85,15 @@ private fun move(p: Point, d: Direction, map: MutableMap<Point, Field>): Point {
     val next = move(d, p)
     return if (canMove(p, d, map) && field !is Empty) {
         if ((field is BoxLeft || field is BoxRight) && (d == Direction.DOWN || d == Direction.UP)) {
-            val l = if (field is BoxRight) field.left else p
-            val r = if (field is BoxLeft) field.right else p
+            val l = if (field is BoxRight) p + Vector(-1, 0) else p
+            val r = if (field is BoxLeft) p + Vector(1, 0) else p
             val nextL = move(d, l)
             val nextR = move(d, r)
 
             move(nextL, d, map)
             move(nextR, d, map)
-            map[nextL] = BoxLeft(nextR)
-            map[nextR] = BoxRight(nextL)
+            map[nextL] = BoxLeft
+            map[nextR] = BoxRight
             map[l] = Empty
             map[r] = Empty
 
@@ -109,15 +109,15 @@ private fun move(p: Point, d: Direction, map: MutableMap<Point, Field>): Point {
     }
 }
 
-private fun canMove(p: Point, d: Direction, map: Map<Point, Field>): Boolean = when (val field = checkNotNull(map[p])) {
+private fun canMove(p: Point, d: Direction, map: Map<Point, Field>): Boolean = when (checkNotNull(map[p])) {
     is Wall -> false
     is Empty -> true
     is BoxLeft -> ((d == Direction.DOWN || d == Direction.UP) && canMove(
-        move(d, field.right), d, map
+        move(d, p + Vector(1, 0)), d, map
     ) || d == Direction.LEFT || d == Direction.RIGHT) && canMove(move(d, p), d, map)
 
     is BoxRight -> ((d == Direction.DOWN || d == Direction.UP) && canMove(
-        move(d, field.left), d, map
+        move(d, p + Vector(-1, 0)), d, map
     ) || d == Direction.LEFT || d == Direction.RIGHT) && canMove(move(d, p), d, map)
 
     else -> canMove(move(d, p), d, map)
