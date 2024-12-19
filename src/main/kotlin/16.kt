@@ -28,9 +28,10 @@ fun solve16a(lines: List<String>): Int {
         )
 
         for (c in candidates) {
-            if (maze[c.p] is MazeEmpty && !visited.contains(Pair(c.p, c.d))) {
+            val cp = Pair(c.p, c.d)
+            if (maze[c.p] is MazeEmpty && cp !in visited) {
                 pq.add(c)
-                visited.add(Pair(p, d))
+                visited.add(cp)
             }
         }
     }
@@ -62,9 +63,10 @@ fun solve16b(lines: List<String>): Int {
         )
 
         for (c in candidates) {
-            if (maze[c.p] is MazeEmpty && !visited.contains(Pair(c.p, c.d))) {
+            val cp = Pair(c.p, c.d)
+            if (maze[c.p] is MazeEmpty && cp !in visited) {
                 pq.add(c)
-                visited.add(Pair(p, d))
+                visited.add(cp)
             }
         }
     }
