@@ -97,10 +97,6 @@ fun solve16b(lines: List<String>): Int {
     return visitedBackwards.map { it.first }.toSet().size
 }
 
-private sealed interface MazeField
-private object MazeWall : MazeField
-private object MazeEmpty : MazeField
-
 private data class Input16(val maze: Map<Point, MazeField>, val start: Point, val end: Point)
 
 private fun parseInput(lines: List<String>): Input16 {

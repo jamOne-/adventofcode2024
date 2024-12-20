@@ -1,4 +1,5 @@
 import java.io.File
+import java.lang.Math.abs
 
 private fun getFile(fileName: String): File = File("src/main/kotlin/input/${fileName}.txt")
 
@@ -14,6 +15,8 @@ data class Point(val x: Int, val y: Int) {
             if (newY < 0) newY + v.y else newY
         )
     }
+
+    fun distance(p2: Point): Int = abs(p2.x - x) + abs(p2.y - y)
 }
 data class PointL(val x: Long, val y: Long) {
     operator fun plus(v: VectorL): PointL = PointL(x + v.x, y + v.y)
@@ -64,3 +67,7 @@ fun rotateCounterclockwise(d: Direction): Direction =
         Direction.DOWN -> Direction.RIGHT
         Direction.RIGHT -> Direction.UP
     }
+
+sealed interface MazeField
+object MazeWall : MazeField
+object MazeEmpty : MazeField
