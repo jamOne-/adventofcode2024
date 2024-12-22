@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="20">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/21.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/21_example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test21.kt" afterDir="false" />
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="21">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/22.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/22.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/22_example1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/22_example2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test22.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,29 +58,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Test21">
-    <configuration name="Test16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventofcode2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test16" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventofcode2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test20" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin._22Kt">
     <configuration name="Test21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test21" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventofcode2024" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test22" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,13 +91,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_22Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_22Kt" />
+      <module name="adventofcode2024" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._22Kt" />
+        <item itemvalue="JUnit.Test22" />
         <item itemvalue="JUnit.Test21" />
         <item itemvalue="Kotlin._21Kt" />
         <item itemvalue="Kotlin._20Kt" />
-        <item itemvalue="JUnit.Test20" />
-        <item itemvalue="JUnit.Test16" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734695246166</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="21">
+      <created>1734816989509</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1734816989509</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,7 +342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03" />
     <MESSAGE value="03: Correct the solution" />
     <MESSAGE value="04" />
     <MESSAGE value="05" />
@@ -361,6 +366,7 @@
     <MESSAGE value="19" />
     <MESSAGE value="16: part2 fixed&#10;&#10;Thanks florczakraf@ for spotting the error &lt;3" />
     <MESSAGE value="20" />
-    <option name="LAST_COMMIT_MESSAGE" value="20" />
+    <MESSAGE value="21" />
+    <option name="LAST_COMMIT_MESSAGE" value="21" />
   </component>
 </project>
