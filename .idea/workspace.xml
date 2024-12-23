@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="21">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/22.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/22.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/22_example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/22_example2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test22.kt" afterDir="false" />
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="22">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/23.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/23_example1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test23.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin._22Kt">
+  <component name="RunManager" selected="Kotlin._23Kt">
     <configuration name="Test21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,16 +76,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_20Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_20Kt" />
+    <configuration name="Test23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_21Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_21Kt" />
-      <module name="adventofcode2024" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test23" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,13 +92,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_23Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_23Kt" />
+      <module name="adventofcode2024" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._23Kt" />
+        <item itemvalue="JUnit.Test23" />
         <item itemvalue="Kotlin._22Kt" />
         <item itemvalue="JUnit.Test22" />
         <item itemvalue="JUnit.Test21" />
-        <item itemvalue="Kotlin._21Kt" />
-        <item itemvalue="Kotlin._20Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734816989509</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="22">
+      <created>1734857716316</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1734857716316</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,7 +350,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03: Correct the solution" />
     <MESSAGE value="04" />
     <MESSAGE value="05" />
     <MESSAGE value="Reapply &quot;05: Use Kotlin `sortedWith` instead of bubble-sort&quot;&#10;&#10;This reverts commit 70fb405e3590ad40edda0df2af29d085bcde3835.&#10;&#10;Turns out the input ordering rules are complete and don't require transitive inference!" />
@@ -367,6 +374,7 @@
     <MESSAGE value="16: part2 fixed&#10;&#10;Thanks florczakraf@ for spotting the error &lt;3" />
     <MESSAGE value="20" />
     <MESSAGE value="21" />
-    <option name="LAST_COMMIT_MESSAGE" value="21" />
+    <MESSAGE value="22" />
+    <option name="LAST_COMMIT_MESSAGE" value="22" />
   </component>
 </project>
