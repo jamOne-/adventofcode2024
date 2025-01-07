@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="23">
+    <list default="true" id="a8d9d7f6-2fd2-4ced-a00e-a31264de24b1" name="Changes" comment="25">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/24.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/24.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/24_example1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/input/24_example2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Test24.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/23.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/23.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,37 +58,21 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin._23Kt">
-    <configuration name="Test21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin._24Kt">
+    <configuration name="Test24" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test21" />
+      <option name="MAIN_CLASS_NAME" value="Test24" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test25" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode2024" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test22" />
+      <option name="MAIN_CLASS_NAME" value="Test25" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventofcode2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test23" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_22Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_22Kt" />
-      <module name="adventofcode2024" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,13 +84,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_24Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_24Kt" />
+      <module name="adventofcode2024" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_25Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_25Kt" />
+      <module name="adventofcode2024" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._24Kt" />
+        <item itemvalue="JUnit.Test24" />
+        <item itemvalue="Kotlin._25Kt" />
+        <item itemvalue="JUnit.Test25" />
         <item itemvalue="Kotlin._23Kt" />
-        <item itemvalue="JUnit.Test23" />
-        <item itemvalue="Kotlin._22Kt" />
-        <item itemvalue="JUnit.Test22" />
-        <item itemvalue="JUnit.Test21" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734936660483</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="23: Bron-Kerbosch">
+      <created>1734946129319</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1734946129319</updated>
+    </task>
+    <task id="LOCAL-00034" summary="25">
+      <created>1735395329653</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1735395329653</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,8 +370,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="05" />
-    <MESSAGE value="Reapply &quot;05: Use Kotlin `sortedWith` instead of bubble-sort&quot;&#10;&#10;This reverts commit 70fb405e3590ad40edda0df2af29d085bcde3835.&#10;&#10;Turns out the input ordering rules are complete and don't require transitive inference!" />
     <MESSAGE value="06" />
     <MESSAGE value="06: Check only locations visited in the first part" />
     <MESSAGE value="07" />
@@ -379,6 +393,8 @@
     <MESSAGE value="21" />
     <MESSAGE value="22" />
     <MESSAGE value="23" />
-    <option name="LAST_COMMIT_MESSAGE" value="23" />
+    <MESSAGE value="23: Bron-Kerbosch" />
+    <MESSAGE value="25" />
+    <option name="LAST_COMMIT_MESSAGE" value="25" />
   </component>
 </project>
